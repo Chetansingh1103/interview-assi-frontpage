@@ -1,0 +1,73 @@
+.animated-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 9.5rem;
+    top: 0;
+    left: 0%;
+    overflow: hidden;
+}
+
+
+.moving-container {
+    position: absolute !important;
+    left: 70%; top:120%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 25%;
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    border-radius: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    animation: mymove 15s linear infinite;
+    z-index: 1;
+  }
+
+  @keyframes mymove {
+    0% {left: 70%; top:130%;}
+    48% {left: 55%; top: 40%;}
+    54% {left: 55%; top: 40%;}
+    100% {left: 70%; top: -30%;}
+  }
+
+  .moving-container-materials{
+    padding: 3rem;
+  }
+
+  .moving-container-materials p{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .star-icons{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+  }
+
+  .date p{
+    color: gray;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  @media screen and (max-width: 1482px){
+
+    .moving-container-materials {
+        padding: 2rem;
+    }
+
+  }
+
+  @media screen and (max-width: 1134px) {
+
+    .moving-container-materials > p {
+        font-size: 17px;
+        padding: 1rem;
+    }
+}
